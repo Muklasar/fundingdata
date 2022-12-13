@@ -1,4 +1,5 @@
 import Banner from "../components/home/Banner"
+import HomeCases from "../components/home/HomeCases"
 import MarketData from "../components/home/MarketData"
 import Services from "../components/home/Services"
 import Static from "../components/home/Static"
@@ -12,6 +13,7 @@ const Home = () =>{
             <MarketData />
             <Static />
             <Services />
+            <HomeCases />
         </div>
     )
 }
