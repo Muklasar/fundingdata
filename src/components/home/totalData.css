@@ -1,0 +1,25 @@
+.home-total-data-sections{
+    background-color: rgb(224 242 254);
+    height: 80vh;
+}
+
+.total-data-heading{
+    font-size: 40px;
+    font-weight: 700;
+    width: 1100px;
+}
+
+.data-counts{
+    font-size: 38px;
+    font-weight: 700;
+}
+.data-company{
+    font-size: 25px;
+    font-weight: 500;
+}
+.data-footer-text{
+    font-size: 24px;
+    font-weight: 500;
+    width: 1100px;
+    margin-left: 15px;
+}

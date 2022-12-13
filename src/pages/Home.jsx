@@ -5,6 +5,7 @@ import MarketData from "../components/home/MarketData"
 import Price from "../components/home/Price"
 import Services from "../components/home/Services"
 import Static from "../components/home/Static"
+import TotalData from "../components/home/TotalData"
 import Trial from "../components/home/Trial"
 // import Trial from "../components/home/Trial"
 import HomeNav from "../components/nav/HomeNav"
@@ -14,7 +15,8 @@ const Home = () =>{
         <div>
             <HomeNav />
             <Banner />
-            <MarketData />
+            {/* <MarketData /> */}
+            <TotalData />
             <Static />
             <Services />
             <HomeCases />
