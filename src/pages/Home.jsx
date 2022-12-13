@@ -1,6 +1,7 @@
 import Banner from "../components/home/Banner"
 import HomeCases from "../components/home/HomeCases"
 import MarketData from "../components/home/MarketData"
+import Price from "../components/home/Price"
 import Services from "../components/home/Services"
 import Static from "../components/home/Static"
 import Trial from "../components/home/Trial"
@@ -17,6 +18,7 @@ const Home = () =>{
             <Services />
             <HomeCases />
             <Trial />
+            <Price />
         </div>
     )
 }
