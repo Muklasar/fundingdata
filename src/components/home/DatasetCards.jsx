@@ -4,15 +4,15 @@ import { Card } from 'antd';
 const tabList = [
   {
     key: 'Tab1',
-    tab: 'Tab1',
+    tab: 'Health care',
   },
   {
     key: 'Tab2',
-    tab: 'Tab2',
+    tab: 'Information Technology',
   },
   {
     key: 'Tab3',
-    tab: 'Tab3',
+    tab: 'finance industry',
   },
 ];
 const contentList = {

@@ -1,4 +1,5 @@
 import Banner from "../components/home/Banner"
+import Footer from "../components/home/Footer"
 import HomeCases from "../components/home/HomeCases"
 import MarketData from "../components/home/MarketData"
 import Price from "../components/home/Price"
@@ -19,6 +20,7 @@ const Home = () =>{
             <HomeCases />
             <Trial />
             <Price />
+            <Footer />
         </div>
     )
 }
