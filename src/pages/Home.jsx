@@ -1,5 +1,6 @@
 import Banner from "../components/home/Banner"
 import MarketData from "../components/home/MarketData"
+import Static from "../components/home/Static"
 import HomeNav from "../components/nav/HomeNav"
 
 const Home = () =>{
@@ -8,6 +9,7 @@ const Home = () =>{
             <HomeNav />
             <Banner />
             <MarketData />
+            <Static />
         </div>
     )
 }

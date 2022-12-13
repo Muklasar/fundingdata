@@ -3,31 +3,26 @@ import React, { useState } from 'react';
 import { Card } from 'antd';
 const tabList = [
   {
-    key: 'Investors',
-    tab: 'Investors',
+    key: 'Tab1',
+    tab: 'Tab1',
   },
   {
-    key: 'Companies',
-    tab: 'Companies',
+    key: 'Tab2',
+    tab: 'Tab2',
   },
   {
-    key: 'Funds',
-    tab: 'Funds',
-  },
-  {
-    key: 'Deals',
-    tab: 'Deals',
+    key: 'Tab3',
+    tab: 'Tab3',
   },
 ];
 const contentList = {
-    Investors: <p>content1</p>,
-    Companies: <p>content2</p>,
-    Funds: <p>Funds</p>,
-    Deals: <p>Deals</p>,
+    Tab1: <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book</p>,
+    Tab2: <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book</p>,
+    Tab3: <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book</p>,
   };
 const DatasetCard = () => {
-    const [activeTabKey1, setActiveTabKey1] = useState('Investors');
-    const onInvestorsChange = (key) => {
+    const [activeTabKey1, setActiveTabKey1] = useState('Tab1');
+    const onTab1Change = (key) => {
       setActiveTabKey1(key);
     };
     return (
@@ -35,15 +30,14 @@ const DatasetCard = () => {
         <Card
           style={{
             width: '100%',
-            fontSize: '50px'
+            fontSize: '16px'
           }}
-          title="Market Datasets"
           tabList={tabList}
           activeTabKey={activeTabKey1}
           onTabChange={(key) => {
-            onInvestorsChange(key);
+            onTab1Change(key);
           }}
-          align= "center"
+          align= "start"
         >
           {contentList[activeTabKey1]}
         </Card>
