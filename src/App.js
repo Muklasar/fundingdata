@@ -1,25 +1,36 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { Suspense } from 'react';
+import { Route, Routes } from 'react-router-dom';
+import Nav from './components/nav/Nav';
+import Home from './pages/Home';
+import UserDashboard from './pages/UserDashboard';
 
-function App() {
+const Login = React.lazy(() => import('./pages/Login'));
+const Register = React.lazy(() => import('./pages/Register'));
+
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Routes>
+      <Route path='' element={
+          <Suspense fallback={<Nav/>}>
+            <Home />
+          </Suspense>} />
+      <Route path='/user-dashboard' element={
+          <Suspense fallback={<Nav/>}>
+            <UserDashboard />
+          </Suspense>} />
+        <Route path='/sign-in' element={
+          <Suspense fallback={<Nav/>}>
+            <Login />
+          </Suspense>
+        } />
+        <Route path='/sign-up' element={
+          <Suspense fallback={<Nav/>}>
+            <Register />
+          </Suspense>} />
+      </Routes>
     </div>
-  );
+  )
 }
 
 export default App;

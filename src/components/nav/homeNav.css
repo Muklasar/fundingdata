@@ -1,0 +1,90 @@
+.main_nav_container {
+    background-color: rgb(14 165 233);
+    padding: 5px 0;
+    z-index: 1000;
+    position: fixed;
+}
+
+.rows {
+    display: grid;
+    grid-template-columns: 2.4fr 5fr 1fr .7fr .6fr;
+    grid-column-gap: 0rem;
+    margin: 0 2rem;
+    align-items: center;
+    padding: .5rem 0;
+    /* justify-content: end; */
+    /* border: 1px solid red; */
+}
+
+.rows .column:first-child {
+    padding-left: 0;
+}
+
+.rows .column:last-child {
+    padding-right: 0;
+}
+
+.list-content {
+    margin-right: 3rem;
+}
+
+.list-content>li {
+    list-style-type: none;
+    font-size: 15px;
+    line-height: 15px;
+    font-weight: bold;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+.main-nav-search {
+    background: #FFFFFF;
+    border: 1px solid #777672;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25), inset 3px 3px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 24.5px;
+    outline: none;
+    padding: 1px 5px 1px 30px;
+    width: 100%;
+}
+
+.main-search-icon {
+    position: absolute;
+    top: 6px;
+    left: 14px;
+    border: none;
+    font-size: 12px;
+}
+
+.main-search-text {
+    font-size: 10px;
+    margin: .1rem 0 0 1rem
+}
+
+.main-logo {
+    font-weight: 600;
+    font-size: 20px;
+    color: #FFFFFF;
+}
+
+.main-login-button {
+    background: rgb(202 138 4);
+    border-radius: 10px;
+    text-align: center;
+    color: #FFFFFF;
+    padding: 3.8px 0;
+    font-size: 14px;
+    font-weight: 600;
+    width: 68px;
+}
+
+.book-demo-button {
+    background: rgb(5 150 105);
+    border-radius: 10px;
+    text-align: center;
+    color: #FFFFFF;
+    padding: 3.8px 0;
+    font-size: 14px;
+    width: 120px;
+    font-weight: 600;
+    cursor: pointer;
+}
